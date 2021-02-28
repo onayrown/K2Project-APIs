@@ -1,3 +1,7 @@
+using K2Project.Domain.Interfaces.Repositories;
+using K2Project.Domain.Interfaces.Services;
+using K2Project.Domain.Services;
+using K2Project.Infra.Repositoies;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -28,6 +32,9 @@ namespace K2Project.Juros.Api
         {
 
             services.AddControllers();
+            services.AddHttpClient<TaxaJurosRepository>();
+            services.AddScoped<IJurosService, JurosService>();
+            services.AddScoped<ITaxaJurosRepository, TaxaJurosRepository>();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "K2Project.Juros.Api", Version = "v1" });
