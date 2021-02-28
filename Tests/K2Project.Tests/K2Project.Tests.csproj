@@ -19,4 +19,8 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\K2Project.Domain\K2Project.Domain.csproj" />
+  </ItemGroup>
+
 </Project>
