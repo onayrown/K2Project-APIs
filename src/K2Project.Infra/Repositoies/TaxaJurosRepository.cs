@@ -23,7 +23,7 @@ namespace K2Project.Infra.Repositoies
             _clientFactory = client;
         }
         private string GetAccountRepURL() => _configuration.GetSection("ExternalServices").GetSection("TaxaJurosAPI").Value;
-        public async Task<Juros> ObterTaxaJurosAsync()
+        public async Task<Juros> ObterTaxaJurosAsync(decimal valorInicial, int meses)
         {
             var fullURL = GetAccountRepURL();
             var client = _clientFactory.CreateClient();
@@ -36,9 +36,11 @@ namespace K2Project.Infra.Repositoies
             }
 
             var content = await httpResponse.Content.ReadAsStringAsync();
-            var task = JsonConvert.DeserializeObject<Juros>(content);
+            var taxa = JsonConvert.DeserializeObject<decimal>(content);
 
-            return task;
+            var juros = new Juros(valorInicial, meses, taxa);
+
+            return juros;
         }        
     }
 }

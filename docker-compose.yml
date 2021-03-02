@@ -1,0 +1,15 @@
+version: '3.4'
+
+services:
+  k2project.juros.api:
+    image: ${DOCKER_REGISTRY-}k2projectjurosapi
+    build:
+      context: .
+      dockerfile: src/K2Project.Juros.Api/Dockerfile
+
+  k2project.taxa.api:
+    image: ${DOCKER_REGISTRY-}k2projecttaxaapi
+    build:
+      context: .
+      dockerfile: src/K2Project.Taxa.Api/Dockerfile
+

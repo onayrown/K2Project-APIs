@@ -18,9 +18,10 @@ namespace K2Project.Domain.Entities
         public int Meses { get; set; }
         public decimal TaxaJuros { get; set; }       
 
-        public async Task<decimal> ObterValorFinal()
+        public async Task<string> ObterValorFinal()
         {
-            return await CalcularValorFinal();
+            var resultado = await CalcularValorFinal();
+            return resultado.ToString("0.00");
         }
         private async Task<decimal> CalcularValorFinal()
         {

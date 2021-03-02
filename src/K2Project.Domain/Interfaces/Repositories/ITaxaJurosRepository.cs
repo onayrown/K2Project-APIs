@@ -8,6 +8,6 @@ namespace K2Project.Domain.Interfaces.Repositories
 {
     public interface ITaxaJurosRepository
     {
-        Task<Juros> ObterTaxaJurosAsync();
+        Task<Juros> ObterTaxaJurosAsync(decimal valorInicial, int meses);
     }
 }

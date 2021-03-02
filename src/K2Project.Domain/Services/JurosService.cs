@@ -15,16 +15,14 @@ namespace K2Project.Domain.Services
         {
             _taxaJurosRepository = taxaJurosRepository;
         }       
-        public async Task<Juros> ObterTaxaJuros()
+        public async Task<Juros> ObterTaxaJuros(decimal valorInicial, int meses)
         {
-            var juros = await _taxaJurosRepository.ObterTaxaJurosAsync();
+            var juros = await _taxaJurosRepository.ObterTaxaJurosAsync(valorInicial, meses);
             return juros;
         }
-        public Task<decimal> ObterValorFinal(decimal valorInicial, int meses)
+        public Task<string> ObterValorFinal(decimal valorInicial, int meses)
         {
-            var juros = ObterTaxaJuros();
-            juros.Result.ValorInicial = valorInicial;
-            juros.Result.Meses = meses;
+            var juros = ObterTaxaJuros(valorInicial, meses);
 
             return juros.Result.ObterValorFinal();
         }

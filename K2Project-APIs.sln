@@ -7,15 +7,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{549D9BA1-4D4
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "K2Project.Domain", "src\K2Project.Domain\K2Project.Domain.csproj", "{12C7B44E-1D28-4B74-B57A-5C9270013B66}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "K2Project.Infra", "src\K2Project.Infra\K2Project.Infra.csproj", "{B55C8242-141D-41AD-B55A-DCD528CC5746}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "K2Project.Infra", "src\K2Project.Infra\K2Project.Infra.csproj", "{B55C8242-141D-41AD-B55A-DCD528CC5746}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "K2Project.Taxa.Api", "src\K2Project.Taxa.Api\K2Project.Taxa.Api.csproj", "{87D7F5B1-88BE-4382-826A-AA021D2078DD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "K2Project.Taxa.Api", "src\K2Project.Taxa.Api\K2Project.Taxa.Api.csproj", "{87D7F5B1-88BE-4382-826A-AA021D2078DD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "K2Project.Juros.Api", "src\K2Project.Juros.Api\K2Project.Juros.Api.csproj", "{9CEEC07D-1923-4197-8D49-D9992973C4B8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "K2Project.Juros.Api", "src\K2Project.Juros.Api\K2Project.Juros.Api.csproj", "{9CEEC07D-1923-4197-8D49-D9992973C4B8}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{2F505A05-128F-4CC2-B4E5-3C6A87D823BF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "K2Project.Tests", "Tests\K2Project.Tests\K2Project.Tests.csproj", "{B3E75CF8-9263-4227-B055-85EF607E67A7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "K2Project.Tests", "Tests\K2Project.Tests\K2Project.Tests.csproj", "{B3E75CF8-9263-4227-B055-85EF607E67A7}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{6D77D340-EF37-4ED8-9E44-0F2EE3394A5C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -87,6 +89,18 @@ Global
 		{B3E75CF8-9263-4227-B055-85EF607E67A7}.Release|x64.Build.0 = Release|Any CPU
 		{B3E75CF8-9263-4227-B055-85EF607E67A7}.Release|x86.ActiveCfg = Release|Any CPU
 		{B3E75CF8-9263-4227-B055-85EF607E67A7}.Release|x86.Build.0 = Release|Any CPU
+		{6D77D340-EF37-4ED8-9E44-0F2EE3394A5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D77D340-EF37-4ED8-9E44-0F2EE3394A5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D77D340-EF37-4ED8-9E44-0F2EE3394A5C}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{6D77D340-EF37-4ED8-9E44-0F2EE3394A5C}.Debug|x64.Build.0 = Debug|Any CPU
+		{6D77D340-EF37-4ED8-9E44-0F2EE3394A5C}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{6D77D340-EF37-4ED8-9E44-0F2EE3394A5C}.Debug|x86.Build.0 = Debug|Any CPU
+		{6D77D340-EF37-4ED8-9E44-0F2EE3394A5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D77D340-EF37-4ED8-9E44-0F2EE3394A5C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D77D340-EF37-4ED8-9E44-0F2EE3394A5C}.Release|x64.ActiveCfg = Release|Any CPU
+		{6D77D340-EF37-4ED8-9E44-0F2EE3394A5C}.Release|x64.Build.0 = Release|Any CPU
+		{6D77D340-EF37-4ED8-9E44-0F2EE3394A5C}.Release|x86.ActiveCfg = Release|Any CPU
+		{6D77D340-EF37-4ED8-9E44-0F2EE3394A5C}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
