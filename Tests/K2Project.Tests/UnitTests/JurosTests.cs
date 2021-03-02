@@ -2,7 +2,7 @@ using System;
 using Xunit;
 using K2Project.Domain.Entities;
 
-namespace K2Project.Tests
+namespace K2Project.Tests.UnitTests
 {
     public class JurosTests
     {
@@ -20,7 +20,7 @@ namespace K2Project.Tests
         {
             //Arrange
             decimal taxaJuros = 0.01m;
-            var juros = new Juros(valorInicial, meses, taxaJuros);
+            var juros = new Domain.Entities.Juros(valorInicial, meses, taxaJuros);
 
             //Act
             var valorFinal = juros.ObterValorFinal().Result;
