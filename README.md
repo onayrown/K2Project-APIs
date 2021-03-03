@@ -40,6 +40,10 @@ encontra-se o fonte no github.
  - Endpoint 2 -> https://localhost:49167/ShowMeTheCode
  - Swagger -> http://localhost:49167/swagger/index.html
 
+## Comentários:
+ - A porta pode variar ao inicializar o container Docker. 
+ - Verificar a porta dos containers K2Project.Juros.Api e K2Project.Taxa.Api quando estiver executando a aplicação.
+
 ## Requerimentos Técnicos
  - [.NET Core 2.2](https://dotnet.microsoft.com/download/visual-studio-sdks?utm_source=getdotnetsdk&utm_medium=referral)
  - [.NET Core 2.0](https://dotnet.microsoft.com/download/visual-studio-sdks?utm_source=getdotnetsdk&utm_medium=referral)
