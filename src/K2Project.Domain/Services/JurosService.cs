@@ -11,16 +11,21 @@ namespace K2Project.Domain.Services
     public class JurosService : IJurosService
     {
         private readonly ITaxaJurosRepository _taxaJurosRepository;
-        public JurosService(ITaxaJurosRepository taxaJurosRepository)
+        private readonly ICodeRepository _codeRepository;
+        public JurosService(ITaxaJurosRepository taxaJurosRepository, ICodeRepository codeRepository)
         {
             _taxaJurosRepository = taxaJurosRepository;
-        }       
+            _codeRepository = codeRepository;
+        }
+
+        public string ObterCodigoFonte() => _codeRepository.ObterCodigoFonte();        
+
         public async Task<Juros> ObterTaxaJuros(decimal valorInicial, int meses)
         {
             var juros = await _taxaJurosRepository.ObterTaxaJurosAsync(valorInicial, meses);
             return juros;
         }
-        public Task<string> ObterValorFinal(decimal valorInicial, int meses)
+        public Task<decimal> ObterValorFinal(decimal valorInicial, int meses)
         {
             var juros = ObterTaxaJuros(valorInicial, meses);
 

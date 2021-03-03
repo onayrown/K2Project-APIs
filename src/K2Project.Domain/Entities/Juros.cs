@@ -18,11 +18,8 @@ namespace K2Project.Domain.Entities
         public int Meses { get; set; }
         public decimal TaxaJuros { get; set; }       
 
-        public async Task<string> ObterValorFinal()
-        {
-            var resultado = await CalcularValorFinal();
-            return resultado.ToString("0.00");
-        }
+        public async Task<decimal> ObterValorFinal() => await CalcularValorFinal();
+  
         private async Task<decimal> CalcularValorFinal()
         {
             var resultadoParenteses = 1 + TaxaJuros;
@@ -31,7 +28,7 @@ namespace K2Project.Domain.Entities
             var resultado = Math.Truncate(ValorInicial * resultadoMultiplicacao) / ValorInicial;
             return await Task.FromResult(ValidarCasasDecimais(resultado, 2));
         }
-        public decimal ValidarCasasDecimais(decimal numero, int digitos)
+        private decimal ValidarCasasDecimais(decimal numero, int digitos)
         {
             decimal resultado1 = (decimal)(Math.Pow(10.0, (double)digitos));
             int resultado2 = (int)(resultado1 * numero);

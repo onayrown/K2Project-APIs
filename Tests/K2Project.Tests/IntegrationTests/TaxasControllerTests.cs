@@ -22,17 +22,17 @@ namespace K2Project.Tests.IntegrationTests
         }
 
         [Fact]
-        public async Task Taxajuros_DeveRetornar_OkResponse()
+        public async Task Taxas_TaxasJuros_DeveRetornarOkResponse()
         {
-            var response = await _client.GetAsync("api/v1/Taxas/taxajuros");
+            var response = await _client.GetAsync("taxajuros");
             response.EnsureSuccessStatusCode();
             response.StatusCode.Should().Be(HttpStatusCode.OK);
         }
 
         [Fact]
-        public async Task Taxajuros_DeveRetornar_Taxa()
+        public async Task Taxas_TaxasJuros_DeveRetornarTaxa()
         {
-            var response = await _client.GetAsync("api/v1/Taxas/taxajuros");
+            var response = await _client.GetAsync("taxajuros");
             response.StatusCode.Should().Be(HttpStatusCode.OK);
 
             var taxa = JsonConvert.DeserializeObject<decimal>

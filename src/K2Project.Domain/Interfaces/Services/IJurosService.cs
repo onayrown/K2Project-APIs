@@ -8,7 +8,8 @@ namespace K2Project.Domain.Interfaces.Services
 {
     public interface IJurosService
     {
-        Task<string> ObterValorFinal(decimal valorInicial, int meses);
+        Task<decimal> ObterValorFinal(decimal valorInicial, int meses);
         Task<Juros> ObterTaxaJuros(decimal valorInicial, int meses);
+        string ObterCodigoFonte();
     }
 }

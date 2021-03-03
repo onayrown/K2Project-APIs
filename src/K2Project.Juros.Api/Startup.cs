@@ -35,6 +35,7 @@ namespace K2Project.Juros.Api
             services.AddHttpClient<TaxaJurosRepository>();
             services.AddScoped<IJurosService, JurosService>();
             services.AddScoped<ITaxaJurosRepository, TaxaJurosRepository>();
+            services.AddScoped<ICodeRepository, CodeRepository>();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "K2Project.Juros.Api", Version = "v1" });

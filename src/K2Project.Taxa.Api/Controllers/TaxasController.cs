@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace K2Project.Taxa.Api.Controllers
 {
-    [Route("api/v1/[controller]/[action]")]
+    [Route("[action]")]
     [ApiController]
     public class TaxasController : ControllerBase
     {
