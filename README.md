@@ -32,13 +32,13 @@ encontra-se o fonte no github.
 ## Descrição detalhada de cada API.
 
 # API 1 Taxas
- - Endpoint 1 -> https://localhost:49166/TaxaJuros
- - Swagger -> http://localhost:49166/swagger/index.html
+ - Endpoint 1 -> https://localhost:49160/TaxaJuros
+ - Swagger -> http://localhost:49160/swagger/index.html
 
 # API 2 Juros
- - Endpoint 1 -> https://localhost:49167/CalculaJuros
- - Endpoint 2 -> https://localhost:49167/ShowMeTheCode
- - Swagger -> http://localhost:49167/swagger/index.html
+ - Endpoint 1 -> http://localhost:49161/CalculaJuros?valorInicial=100&meses=6
+ - Endpoint 2 -> https://localhost:49161/ShowMeTheCode
+ - Swagger -> http://localhost:49161/swagger/index.html
 
 ## Comentários:
  - A porta pode variar ao inicializar o container Docker. 
