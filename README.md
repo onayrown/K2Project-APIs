@@ -36,9 +36,9 @@ Endpoint 1 -> https://localhost:49166/TaxaJuros
 Swagger -> http://localhost:49166/swagger/index.html
 
 # API 2 Juros
-Endpoint 1 -> https://localhost:49167/CalculaJuros
-Endpoint 2 -> https://localhost:49167/ShowMeTheCode
-Swagger -> http://localhost:49167/swagger/index.html
+ - Endpoint 1 -> https://localhost:49167/CalculaJuros
+ - Endpoint 2 -> https://localhost:49167/ShowMeTheCode
+ - Swagger -> http://localhost:49167/swagger/index.html
 
 ## Requerimentos Técnicos
  - [.NET Core 2.2](https://dotnet.microsoft.com/download/visual-studio-sdks?utm_source=getdotnetsdk&utm_medium=referral)
