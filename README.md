@@ -32,8 +32,8 @@ encontra-se o fonte no github.
 ## Descrição detalhada de cada API.
 
 # API 1 Taxas
-Endpoint 1 -> https://localhost:49166/TaxaJuros
-Swagger -> http://localhost:49166/swagger/index.html
+ - Endpoint 1 -> https://localhost:49166/TaxaJuros
+ - Swagger -> http://localhost:49166/swagger/index.html
 
 # API 2 Juros
  - Endpoint 1 -> https://localhost:49167/CalculaJuros
